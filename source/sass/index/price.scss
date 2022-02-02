@@ -1,0 +1,72 @@
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 198px;
+  margin-bottom: 17px;
+}
+
+.price-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  flex: 1 1 100%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: $black;
+  margin-bottom: 11px;
+  border: none;
+
+  span {
+    text-decoration: line-through;
+    color: $grey;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 11px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 30px;
+    width: 24px;
+    height: 24px;
+    background: transparent url("../img/icons/arrow-right.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &:hover {
+    opacity: 0.9;
+
+    &::after {
+      transform: translateX(13px);
+      transition: 0.3s;
+    }
+  }
+
+  &:focus {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.5;
+
+    &::after {
+      transform: translateX(13px);
+      transition: 0.3s;
+    }
+  }
+}
+
+.price p {
+  border: 1px solid $black;
+  padding: 7px 7px 1px 7px;
+
+  &:not(:last-of-type) {
+    margin-right: 10px;
+  }
+}

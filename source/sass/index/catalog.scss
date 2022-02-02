@@ -1,0 +1,166 @@
+.catalog {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 34px;
+  grid-row-gap: 34px;
+
+  padding: 23px 20px 0 20px;
+  margin-bottom: 30px;
+}
+
+.catalog-left {
+  position: relative;
+}
+
+.catalog-left__main-list {
+  @include reset;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.catalog-left__main-item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.catalog-left-list {
+  @include reset;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: flex;
+  width: 10.205%;
+  flex-direction: column;
+}
+
+.catalog-left-item {
+  filter: brightness(0.9) contrast(0.8);
+
+  &--active {
+    filter: none;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: scale-down;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    filter: none;
+  }
+}
+
+.catalog-right {
+  padding-top: 23px;
+}
+
+.catalog-right h3 {
+  @include reset-block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 9px;
+}
+
+.catalog-right p {
+  @include reset-block;
+  font-size: 12px;
+  font-weight: inherit;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  margin-bottom: 15px;
+}
+
+.catalog-right__top-wrapper {
+  border-bottom: 1px solid grey;
+  padding-bottom: 29px;
+}
+
+.catalog-link {
+  grid-column: 1/-1;
+  justify-self: center;
+  color: $black;
+  border-bottom: 1px solid $black;
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &:focus {
+    border-color: $blue;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+  }
+}
+
+.catalog-right__bottom-wrapper {
+  padding-top: 20px;
+}
+
+@media (max-width: $tablet-width) {
+  .catalog-left__main-list {
+    img {
+      max-width: 450px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .catalog {
+    padding: 16px 0 0 0;
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
+    margin-bottom: 57px;
+  }
+
+  .catalog-left__main-list {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .catalog-right {
+    padding: 0;
+    margin-bottom: 33px;
+  }
+
+  .catalog-right__top-wrapper {
+    padding: 0 0 29px 19px;
+  }
+
+  .catalog-right h3 {
+    font-size: 17px;
+  }
+
+  .catalog-right__bottom-wrapper {
+    padding: 22px 0 0 19px;
+  }
+
+  .catalog-left-list {
+    top: 28px;
+    width: 10.67%;
+  }
+
+  .catalog-left-item {
+    margin-bottom: 4px;
+  }
+}

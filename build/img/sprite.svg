@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-down" viewBox="0 0 24 24"><g fill="none">
+<path d="M18.75 7.75L11.75 15.75L5.25 7.75" stroke="#333333"/>
+</g></symbol>
+<symbol id="basket" viewBox="0 0 24 24"><g >
+<path d="M5.25468 10.5659C5.13958 9.11201 6.2884 7.86865 7.74689 7.86865H16.2531C17.7116 7.86865 18.8604 9.11201 18.7453 10.566L18.2203 17.1975C18.1174 18.4977 17.0323 19.5002 15.7281 19.5002H8.27189C6.96769 19.5002 5.88261 18.4977 5.77968 17.1975L5.25468 10.5659Z" stroke="currentColor"/>
+<path d="M7.99999 12.5C7.99999 12.5 7.78329 4 12 4C16.2167 4 16 12.5 16 12.5" stroke="currentColor"/>
+</g></symbol><symbol id="clock" viewBox="0 0 18 18"><g fill="none">
+<circle cx="9" cy="9" r="7" fill="white" stroke="#333333"/>
+<path d="M8.55453 4.5L8.55453 9.70613L12.5 12" stroke="#333333"/>
+</g></symbol>
+<symbol id="description-icon" viewBox="0 0 20 20"><g >
+<circle cx="10" cy="10" r="7" stroke="currentColor"/>
+<path d="M6 8C6.24928 8 8.75787 6.5 8.75787 6.5H10.0043H11.2507C11.2507 6.5 13.7507 8 14 8" stroke="currentColor"/>
+<path d="M6.01577 7.39283L6.01576 9.17806L7.76075 9.4756L7.76075 13.9386" stroke="currentColor"/>
+<path d="M13.9842 7.39283L13.9842 9.17806L12.2393 9.4756L12.2478 13.9386" stroke="currentColor"/>
+<line x1="7.51145" y1="13.4385" x2="12.4971" y2="13.4385" stroke="currentColor"/>
+<path d="M8.50859 6.5C8.50859 6.5 9.00716 8.28522 10.0043 8.28522C11.0014 8.28522 11.5 6.5 11.5 6.5" stroke="currentColor"/>
+</g></symbol><symbol id="full-screen" viewBox="0 0 24 24"><g fill="none">
+<rect x="4.5" y="6.5" width="13" height="13" rx="1.5" stroke="white"/>
+<path d="M6.33784 6.63126L6.33784 6.49958C6.33784 5.39501 7.23327 4.49958 8.33784 4.49958L17.5 4.49959C18.6045 4.49959 19.5 5.39502 19.5 6.49959L19.5 15.9382C19.5 16.9853 18.5159 17.7537 17.5 17.4997V17.4997" stroke="white"/>
+</g></symbol><symbol id="heart" viewBox="0 0 24 24"><g >
+<path d="M11.9 7.0948C10.6998 1.47892 1.40881 5.90389 5.76037 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="currentColor"/>
+<path d="M11.8941 7.0948C13.0944 1.47892 22.7304 5.90389 18.3789 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="currentColor"/>
+<path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="currentColor"/>
+</g></symbol>
+<symbol id="pay" viewBox="0 0 20 20"><g fill="none">
+<rect x="3.5" y="5.5" width="13" height="9" rx="0.5" stroke="#333333"/>
+<rect x="4" y="8" width="12" height="2" fill="#333333"/>
+</g></symbol><symbol id="person" viewBox="0 0 24 24"><g >
+<circle cx="12.4595" cy="8.18919" r="3.68919" stroke="currentColor"/>
+<path d="M4.5 19.3379H19.5" stroke="currentColor"/>
+<path d="M4.5 19.84C4.5 16.4347 8.84699 13.9134 12.2143 14.0023C15.4328 14.0872 19.5 16.4347 19.5 19.84" stroke="currentColor"/>
+</g></symbol>
+</svg>

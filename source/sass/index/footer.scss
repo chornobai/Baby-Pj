@@ -1,0 +1,162 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 calc(50% - 598px) 150px;
+  margin: 0 20px;
+}
+
+.footer h2 {
+  @include reset;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 17px;
+  letter-spacing: 0.04em;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  margin-bottom: 58px;
+}
+
+.footer-info-list {
+  @include reset;
+}
+
+.footer-info-item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer-info-link {
+  color: $black;
+}
+
+.footer-form {
+  width: 452px;
+}
+
+.footer-form h2 {
+  @include reset;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 29px;
+  letter-spacing: 0.04em;
+}
+
+.footer-form form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer-form input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $black;
+  padding: 15px 0 11px 15px;
+  margin-bottom: 34px;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: 0.04em;
+  border-radius: 0;
+
+  &::placeholder {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: 0.04em;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $blue;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $blue;
+  }
+}
+
+.footer-form-button {
+  align-self: flex-end;
+  border: 1px solid $black;
+  background: white;
+  padding: 8px 29px;
+  letter-spacing: 0.04em;
+
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+
+  &:hover {
+    filter: invert(0.8);
+  }
+
+  &:focus {
+    filter: invert(0.8);
+  }
+
+  &:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+  }
+}
+
+.footer-form-button-reset {
+  position: absolute;
+  border: none;
+  outline: none;
+  width: 16px;
+  height: 16px;
+  top: 19px;
+  right: 10px;
+  background: transparent url("../../img/icons/cross.svg") no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+
+  &:focus {
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+
+  &:active {
+    transform: scale(1);
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer-info-list {
+    &:last-of-type {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer-info {
+    width: 280px;
+  }
+
+  .footer-form h2 {
+    padding-right: 62px;
+    margin-bottom: 13px;
+  }
+
+  .footer-form input {
+    margin-bottom: 24px;
+  }
+}

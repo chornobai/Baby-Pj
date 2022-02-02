@@ -1,0 +1,57 @@
+.service {
+  @include reset;
+}
+
+.service-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  svg {
+    fill: none;
+    stroke: $black;
+    margin-right: 5px;
+  }
+
+  &:hover {
+    svg {
+      stroke: $blue;
+    }
+  }
+}
+
+.service-link {
+  letter-spacing: 0.04em;
+  color: $black;
+  border-bottom: 1px solid $black;
+
+  &:hover {
+    border-color: $blue;
+
+    .service-item svg {
+      color: aquamarine;
+    }
+  }
+
+  &:focus {
+    border-color: $blue;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+    border-color: $blue;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .service-item {
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.size {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.size-choice {
+  max-width: 315px;
+  padding: 11px 0 11px 14px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  appearance: none;
+  outline: none;
+  margin-bottom: 10px;
+  background: url("../../img/icons/arrow-down.svg") no-repeat 98%;
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &:focus {
+    border-color: $blue;
+  }
+}
+
+.size-link {
+  align-self: flex-start;
+  border-bottom: 1px solid $black;
+  color: $black;
+  letter-spacing: 0.04em;
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &:focus {
+    border-color: $blue;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+    border-color: $blue;
+  }
+}

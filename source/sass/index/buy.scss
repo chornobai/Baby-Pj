@@ -1,0 +1,204 @@
+.buy {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 409px;
+  row-gap: 12px;
+}
+
+.buy-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $grey-light;
+  width: 145px;
+  height: 44px;
+  margin-right: 12px;
+}
+
+.buy-quantity-button {
+  border: none;
+  font-family: inherit;
+  color: $black;
+  width: 47px;
+  height: 100%;
+  background-color: $grey-light;
+
+  &:hover {
+    background-color: $black;
+    transition: 0.2s;
+    color: white;
+  }
+
+  &:focus {
+    background-color: $black;
+    transition: 0.2s;
+    color: white;
+  }
+
+  &:active {
+    background-color: $black;
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+}
+
+.buy-amount {
+  color: $black;
+}
+
+.buy-link {
+  justify-self: start;
+  align-self: flex-end;
+  color: $black;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid $black;
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &:focus {
+    border-color: $blue;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+    border-color: $blue;
+  }
+}
+
+.buy-basket {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 0.04em;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  background-color: $black;
+  color: white;
+  padding: 11px 27px;
+  margin-right: 4px;
+
+  &:hover {
+    color: $black;
+    background: white;
+    border: 1px solid black;
+    transition: 0.2s;
+  }
+
+  &:focus {
+    color: $black;
+
+    background: white;
+    border: 1px solid black;
+    transition: 0.2s;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: 0.2s;
+  }
+}
+
+.buy-favorite {
+  box-sizing: border-box;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: $black;
+  color: white;
+
+  svg {
+    fill: none;
+  }
+
+  &:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
+
+  &:focus {
+    border: 1px solid black;
+    transition: 0.2s;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: 0.2s;
+  }
+}
+
+.buy-favorite--add {
+  background-color: $black;
+  color: $black;
+
+  svg {
+    fill: violet;
+  }
+}
+
+// Сообщения
+
+.basket-add,
+.favorite {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 23%;
+  right: 40%;
+
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  border-radius: 27%;
+  background: rgba($color: $blue, $alpha: 0.8);
+}
+
+.basket-add p,
+.favorite p {
+  @include reset-block;
+  display: block;
+  margin-bottom: 0;
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  color: $black;
+  text-align: center;
+}
+
+.basket-add p {
+  line-height: 42px;
+  font-weight: 400;
+}
+
+@media (max-width: $tablet-width) {
+  .buy-favorite {
+    margin-right: 5px;
+  }
+
+  .favorite {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .buy {
+    row-gap: 15px;
+  }
+
+  .buy-link {
+    padding-top: 5px;
+  }
+
+  .favorite {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
